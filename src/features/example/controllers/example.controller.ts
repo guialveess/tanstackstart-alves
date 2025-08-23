@@ -33,4 +33,5 @@ export const exampleController = igniter.controller({
       },
     }),
   },
+  name: ''
 });

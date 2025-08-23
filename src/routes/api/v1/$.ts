@@ -14,10 +14,13 @@ import { AppRouter } from '@/igniter.router'
 
 /**
  * The core handler function that bridges TanStack Start and Igniter.js.
- * @param request - The incoming `Request` object from the client.
+ * @param ctx - The loader/action context from TanStack Start.
  * @returns A standard `Response` object.
  */
-const igniterApiHandler = async ({ request }: { request: Request }) => {
+const igniterApiHandler = async (ctx: any) => {
+  // Extract the request from the context (TanStack provides it as ctx.request)
+  const request = ctx.request as Request
+
   // 1. Pass the incoming request to the Igniter router's handler.
   const igniterResponse = await AppRouter.handler(request)
 
@@ -41,9 +44,5 @@ export const Route = createFileRoute('/api/v1/$')({
    */
   loader: igniterApiHandler,
 
-  /**
-   * The `action` function handles POST, PUT, PATCH, DELETE requests.
-   * We assign the same universal handler to it.
-   */
-  action: igniterApiHandler,
+  // Removed unsupported 'action' property as only 'loader' is allowed for this route type.
 })
