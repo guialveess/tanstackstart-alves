@@ -39,7 +39,6 @@ function RootComponent() {
         <HeadContent />
       </head>
       <body className='dark'>
-        {/* The IgniterProvider wraps the entire application */}
         <IgniterProvider>
           <Outlet />
         </IgniterProvider>

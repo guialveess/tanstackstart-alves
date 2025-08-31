@@ -11,12 +11,12 @@ export function GradientBackground() {
         softness={0.3}      // antes 0.76
         intensity={0.25}    // antes 0.45
         noise={0}
-        shape="corners"
+        shape="truchet"
         offsetX={0}
         offsetY={0}
         scale={0.7}         // antes 1
         rotation={0}
-        speed={0.3}         // antes 1
+        speed={0.5}         // antes 1
         colors={[
           "hsl(193, 85%, 66%)",
           "hsl(196, 100%, 83%)",
