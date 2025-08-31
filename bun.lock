@@ -4,11 +4,13 @@
     "": {
       "name": "tanstack-start-example-basic",
       "dependencies": {
+        "@fontsource/instrument-serif": "^5.2.6",
         "@hookform/resolvers": "^5.1.1",
         "@igniter-js/adapter-bullmq": "latest",
         "@igniter-js/adapter-mcp-server": "latest",
         "@igniter-js/adapter-redis": "latest",
         "@igniter-js/core": "latest",
+        "@paper-design/shaders-react": "^0.0.46",
         "@prisma/client": "^6.14.0",
         "@radix-ui/react-accordion": "^1.2.11",
         "@radix-ui/react-alert-dialog": "^1.1.14",
@@ -213,6 +215,8 @@
 
     "@floating-ui/utils": ["@floating-ui/utils@0.2.10", "", {}, "sha512-aGTxbpbg8/b5JfU1HXSrbH3wXZuLPJcNEcZQFMxLs3oSzgtVu6nFPkbbGGUvBcUjKV2YyB9Wxxabo+HEH9tcRQ=="],
 
+    "@fontsource/instrument-serif": ["@fontsource/instrument-serif@5.2.6", "", {}, "sha512-uvAmjVbzV26yaPesOQxwQcVU8ALbpgZ8E329KoAr19aH0Vr5BPHzSq7ImtmYmlla4kC3qcbhePdXUJEB20ZbpA=="],
+
     "@hookform/resolvers": ["@hookform/resolvers@5.2.1", "", { "dependencies": { "@standard-schema/utils": "^0.3.0" }, "peerDependencies": { "react-hook-form": "^7.55.0" } }, "sha512-u0+6X58gkjMcxur1wRWokA7XsiiBJ6aK17aPZxhkoYiK5J+HcTx0Vhu9ovXe6H+dVpO6cjrn2FkJTryXEMlryQ=="],
 
     "@igniter-js/adapter-bullmq": ["@igniter-js/adapter-bullmq@0.2.1", "", { "peerDependencies": { "@igniter-js/core": "*", "bullmq": "^4.10.3" } }, "sha512-GbMFWdOvJzgTcjQjGrCe4oSeh0CYXCAg1rfg7zZJfBIB85lvf1M6K7amF7kaUwGcsyQ9QB/MYK30r4dKMV9H0Q=="],
@@ -352,6 +356,10 @@
     "@oozcitak/url": ["@oozcitak/url@1.0.4", "", { "dependencies": { "@oozcitak/infra": "1.0.8", "@oozcitak/util": "8.3.8" } }, "sha512-kDcD8y+y3FCSOvnBI6HJgl00viO/nGbQoCINmQ0h98OhnGITrWR3bOGfwYCthgcrV8AnTJz8MzslTQbC3SOAmw=="],
 
     "@oozcitak/util": ["@oozcitak/util@8.3.8", "", {}, "sha512-T8TbSnGsxo6TDBJx/Sgv/BlVJL3tshxZP7Aq5R1mSnM5OcHY2dQaxLMu2+E8u3gN0MLOzdjurqN4ZRVuzQycOQ=="],
+
+    "@paper-design/shaders": ["@paper-design/shaders@0.0.46", "", {}, "sha512-ErPQwLguvv7qI8E+bdwSaNQF27Q8MnZmtD8rGp+K473AYee+cXWv2OqBkKnuMl/n1JmL8vBxSSTflOfO6DB4aQ=="],
+
+    "@paper-design/shaders-react": ["@paper-design/shaders-react@0.0.46", "", { "dependencies": { "@paper-design/shaders": "0.0.46" }, "peerDependencies": { "@types/react": "^18 || ^19", "react": "^18 || ^19" }, "optionalPeers": ["@types/react"] }, "sha512-bvgLvw8Cozmhw1spRmaabT/bh3N4G/Qq6Mb8yOWvWccTmo1UB7YKhEDbHbgCevvry2BgPGotrlfCE+YGeDeY7g=="],
 
     "@parcel/watcher": ["@parcel/watcher@2.5.1", "", { "dependencies": { "detect-libc": "^1.0.3", "is-glob": "^4.0.3", "micromatch": "^4.0.5", "node-addon-api": "^7.0.0" }, "optionalDependencies": { "@parcel/watcher-android-arm64": "2.5.1", "@parcel/watcher-darwin-arm64": "2.5.1", "@parcel/watcher-darwin-x64": "2.5.1", "@parcel/watcher-freebsd-x64": "2.5.1", "@parcel/watcher-linux-arm-glibc": "2.5.1", "@parcel/watcher-linux-arm-musl": "2.5.1", "@parcel/watcher-linux-arm64-glibc": "2.5.1", "@parcel/watcher-linux-arm64-musl": "2.5.1", "@parcel/watcher-linux-x64-glibc": "2.5.1", "@parcel/watcher-linux-x64-musl": "2.5.1", "@parcel/watcher-win32-arm64": "2.5.1", "@parcel/watcher-win32-ia32": "2.5.1", "@parcel/watcher-win32-x64": "2.5.1" } }, "sha512-dfUnCxiN9H4ap84DvD2ubjw+3vUNpstxa0TneY/Paat8a3R4uQZDLSvWjmznAY/DoahqTHl9V46HF/Zs3F29pg=="],
 

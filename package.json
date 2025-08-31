@@ -9,11 +9,13 @@
     "start": "node .output/server/index.mjs"
   },
   "dependencies": {
+    "@fontsource/instrument-serif": "^5.2.6",
     "@hookform/resolvers": "^5.1.1",
     "@igniter-js/adapter-bullmq": "latest",
     "@igniter-js/adapter-mcp-server": "latest",
     "@igniter-js/adapter-redis": "latest",
     "@igniter-js/core": "latest",
+    "@paper-design/shaders-react": "^0.0.46",
     "@prisma/client": "^6.14.0",
     "@radix-ui/react-accordion": "^1.2.11",
     "@radix-ui/react-alert-dialog": "^1.1.14",

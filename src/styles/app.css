@@ -1,7 +1,19 @@
 @import "tailwindcss" source("../");
 @import "tw-animate-css";
 
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:wght@400&display=swap');
+
 @custom-variant dark (&:is(.dark *));
+
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden; 
+  overflow-y: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Instrument Serif', serif;
+}
 
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
