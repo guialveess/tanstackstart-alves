@@ -6,7 +6,12 @@ export function GradientBackground() {
   return (
     <div className="absolute inset-0 -z-10">
       <GrainGradient
-        style={{ height: "100%", width: "100%" }}
+        style={{
+        height: "100%",
+        width: "100%",
+        opacity: 0,
+        animation: "fadeIn 2s ease 0.5s forwards"
+        }}
         colorBack="hsl(0, 0%, 0%)"
         softness={0.3}      // antes 0.76
         intensity={0.25}    // antes 0.45
