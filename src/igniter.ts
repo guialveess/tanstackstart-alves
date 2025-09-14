@@ -10,7 +10,7 @@ import openapi from './docs/openapi.json'
 export const igniter = Igniter
   .context(createIgniterAppContext())
   .config({
-    baseURL: process.env.REACT_APP_IGNITER_API_URL || 'http://localhost:3000',
+    baseURL: process.env.REACT_APP_IGNITER_API_URL || 'http://localhost:6859',
     basePATH: process.env.REACT_APP_IGNITER_API_BASE_PATH || '/api/v1',
   })
   .docs({

@@ -18,7 +18,7 @@ export const Route = createFileRoute("/")({
 
 function HomeComponent() {
   return (
-    <div className="h-screen grid grid-rows-[auto_1fr_auto] gap-4 relative">
+    <div className="h-screen grid grid-rows-[auto_1fr_auto] relative">
       <header className="border-b bg-black/5 w-full border-x px-3 flex items-center justify-between space-x-4">
         <div className="border-x w-full py-2 px-4 flex items-center justify-between space-x-4">
           <div className="flex items-center space-x-2">
