@@ -2,7 +2,6 @@
 /// <reference types="vite/client" />
 // other imports...
 
-import { IgniterProvider } from '@igniter-js/core/client'
 import {
   createRootRoute,
   HeadContent,
@@ -39,9 +38,7 @@ function RootComponent() {
         <HeadContent />
       </head>
       <body className='dark'>
-        <IgniterProvider>
-          <Outlet />
-        </IgniterProvider>
+        <Outlet />
         <Scripts />
       </body>
     </html>
