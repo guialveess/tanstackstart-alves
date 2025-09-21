@@ -48,7 +48,7 @@ function HomeComponent() {
         </div>
       </header>
 
-      <main className="relative flex-1 flex items-center justify-center overflow-hidden">
+      <main className="relative flex-1 flex items-center justify-center overflow-hidden min-h-screen">
         <GradientBackground />
         <section className="px-6 relative z-10">
           <h1
