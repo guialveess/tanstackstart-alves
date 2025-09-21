@@ -56,7 +56,6 @@ function HomeComponent() {
           >
             imagination is limit
           </h1>
-
         </section>
       </main>
     </div>

@@ -7,21 +7,21 @@ import {
   HeadContent,
   Outlet,
   Scripts,
-} from '@tanstack/react-router'
+} from "@tanstack/react-router";
 
-import appCss from '../styles/app.css?url'
+import appCss from "../styles/app.css?url";
 
 export const Route = createRootRoute({
   head: () => ({
-    links: [{ rel: 'stylesheet', href: appCss }],
+    links: [{ rel: "stylesheet", href: appCss }],
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { name: 'description', content: 'guialvees' },
+      { name: "description", content: "guialvees" },
     ],
   }),
   component: RootComponent,
-})
+});
 
 function RootComponent() {
   return (
@@ -37,10 +37,10 @@ function RootComponent() {
 
         <HeadContent />
       </head>
-      <body className='dark'>
+      <body className="dark">
         <Outlet />
         <Scripts />
       </body>
     </html>
-  )
+  );
 }
