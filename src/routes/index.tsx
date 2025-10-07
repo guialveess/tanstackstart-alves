@@ -5,8 +5,15 @@ import { ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { GradientBackground } from "@/components/GradientBackground";
 import { Instrument_Serif } from "@/fonts/instrumentSerif";
+import { Paper_Mono } from "@/fonts/instrumentSerif";
 
 const instrumentSerif = Instrument_Serif({
+  subsets: ["latin"],
+  weight: ["400"],
+  display: "swap",
+});
+
+const paperMonoSerif = Paper_Mono({
   subsets: ["latin"],
   weight: ["400"],
   display: "swap",
@@ -52,7 +59,7 @@ function HomeComponent() {
         <GradientBackground />
         <section className="px-6 relative z-10">
           <h1
-            className={`text-white text-xl ${instrumentSerif.className} animate-fadeIn`}
+            className={`text-white text-2xl ${paperMonoSerif.className} animate-fadeIn`}
           >
             imagination is limit
           </h1>

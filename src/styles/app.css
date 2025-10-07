@@ -4,6 +4,17 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:wght@400&display=swap");
 
+@font-face {
+  font-family: "Paper Mono";
+  src:
+    url("/fonts/otf/PaperMono-Regular.otf") format("opentype"),
+    url("/fonts/ttf/PaperMono-Regular.ttf") format("truetype"),
+    url("/fonts/webfonts/PaperMono-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 @custom-variant dark (&:is(.dark *));
 
 html,
@@ -14,7 +25,7 @@ body {
   overflow-y: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "Instrument Serif", serif;
+  font-family: "Paper Mono", serif;
 }
 
 @theme inline {

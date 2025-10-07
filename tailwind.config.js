@@ -4,7 +4,8 @@ module.exports = {
     extend: {
       fontFamily: {
         instrument: ["'Instrument Serif'", "serif"],
+        paper: ['"Paper Mono"', "monospace"],
       },
     },
   },
-}
+};
