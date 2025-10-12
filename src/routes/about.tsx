@@ -51,8 +51,8 @@ function RouteComponent() {
 
         <section className="relative z-10 transition-all duration-700">
           <Dithering
-            width={1280}
-            height={720}
+            width={960}
+            height={540}
             colorBack="rgba(0,0,0,0)"
             colorFront="#ff4800"
             shape="sphere"
