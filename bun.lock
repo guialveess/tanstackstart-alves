@@ -6,7 +6,7 @@
       "dependencies": {
         "@fontsource/instrument-serif": "^5.2.6",
         "@hookform/resolvers": "^5.1.1",
-        "@paper-design/shaders-react": "^0.0.46",
+        "@paper-design/shaders-react": "^0.0.57",
         "@prisma/client": "^6.14.0",
         "@radix-ui/react-accordion": "^1.2.11",
         "@radix-ui/react-alert-dialog": "^1.1.14",
@@ -264,9 +264,9 @@
 
     "@oozcitak/util": ["@oozcitak/util@8.3.8", "", {}, "sha512-T8TbSnGsxo6TDBJx/Sgv/BlVJL3tshxZP7Aq5R1mSnM5OcHY2dQaxLMu2+E8u3gN0MLOzdjurqN4ZRVuzQycOQ=="],
 
-    "@paper-design/shaders": ["@paper-design/shaders@0.0.46", "", {}, "sha512-ErPQwLguvv7qI8E+bdwSaNQF27Q8MnZmtD8rGp+K473AYee+cXWv2OqBkKnuMl/n1JmL8vBxSSTflOfO6DB4aQ=="],
+    "@paper-design/shaders": ["@paper-design/shaders@0.0.57", "", {}, "sha512-2bV7CqLcfA9paFOdH0a5NQuqzyAKep4Zf5j7ll78bCV6lzFz5/z0TMjduR+cd+DrSWGzdJfVQE8QC7f7AmcQQQ=="],
 
-    "@paper-design/shaders-react": ["@paper-design/shaders-react@0.0.46", "", { "dependencies": { "@paper-design/shaders": "0.0.46" }, "peerDependencies": { "@types/react": "^18 || ^19", "react": "^18 || ^19" }, "optionalPeers": ["@types/react"] }, "sha512-bvgLvw8Cozmhw1spRmaabT/bh3N4G/Qq6Mb8yOWvWccTmo1UB7YKhEDbHbgCevvry2BgPGotrlfCE+YGeDeY7g=="],
+    "@paper-design/shaders-react": ["@paper-design/shaders-react@0.0.57", "", { "dependencies": { "@paper-design/shaders": "0.0.57" }, "peerDependencies": { "@types/react": "^18 || ^19", "react": "^18 || ^19" }, "optionalPeers": ["@types/react"] }, "sha512-PUr//I3Fdk4l44ORt6NNGPgz4MRz+DDNjAWK9B/hNlLZrKPKdBJtiXYUlQBpcJfnBUjq3sy2VJk6tNdby8o/2g=="],
 
     "@parcel/watcher": ["@parcel/watcher@2.5.1", "", { "dependencies": { "detect-libc": "^1.0.3", "is-glob": "^4.0.3", "micromatch": "^4.0.5", "node-addon-api": "^7.0.0" }, "optionalDependencies": { "@parcel/watcher-android-arm64": "2.5.1", "@parcel/watcher-darwin-arm64": "2.5.1", "@parcel/watcher-darwin-x64": "2.5.1", "@parcel/watcher-freebsd-x64": "2.5.1", "@parcel/watcher-linux-arm-glibc": "2.5.1", "@parcel/watcher-linux-arm-musl": "2.5.1", "@parcel/watcher-linux-arm64-glibc": "2.5.1", "@parcel/watcher-linux-arm64-musl": "2.5.1", "@parcel/watcher-linux-x64-glibc": "2.5.1", "@parcel/watcher-linux-x64-musl": "2.5.1", "@parcel/watcher-win32-arm64": "2.5.1", "@parcel/watcher-win32-ia32": "2.5.1", "@parcel/watcher-win32-x64": "2.5.1" } }, "sha512-dfUnCxiN9H4ap84DvD2ubjw+3vUNpstxa0TneY/Paat8a3R4uQZDLSvWjmznAY/DoahqTHl9V46HF/Zs3F29pg=="],
 
