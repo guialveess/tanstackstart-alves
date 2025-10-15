@@ -1,9 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Header } from "@/components/ui/header";
 import { Instrument_Serif } from "@/fonts/instrumentSerif";
-import { ImageDithering } from "@paper-design/shaders-react";
+import { ImageDithering, Dithering } from "@paper-design/shaders-react";
 import { useEffect, useState } from "react";
-import { Dithering } from "@paper-design/shaders-react";
 
 const instrumentSerif = Instrument_Serif({
   subsets: ["latin"],
@@ -17,28 +16,46 @@ export const Route = createFileRoute("/about")({
 
 function RouteComponent() {
   const [isFirefox, setFirefox] = useState(false);
+  const [viewportHeight, setViewportHeight] = useState<number | null>(null);
 
   useEffect(() => {
     if (typeof navigator !== "undefined") {
       const ua = navigator.userAgent.toLowerCase();
       const isChromeBrowser =
         ua.includes("firefox") && !ua.includes("edge") && !ua.includes("opr");
-      if (isChromeBrowser) {
-        setFirefox(true);
-        console.log("Você está usando o Firefox");
-      }
+      if (isChromeBrowser) setFirefox(true);
     }
   }, []);
 
+  useEffect(() => {
+    const updateViewportHeight = () => {
+      setViewportHeight(window.innerHeight);
+    };
+
+    updateViewportHeight();
+    window.addEventListener("resize", updateViewportHeight);
+    window.addEventListener("orientationchange", updateViewportHeight);
+
+    return () => {
+      window.removeEventListener("resize", updateViewportHeight);
+      window.removeEventListener("orientationchange", updateViewportHeight);
+    };
+  }, []);
+
   return (
-    <div className="relative w-screen h-screen overflow-hidden">
+    <div
+      className="relative w-screen overflow-hidden"
+      style={{
+        height: viewportHeight ? `${viewportHeight}px` : "100vh",
+      }}
+    >
       <Header />
 
       <main className="relative flex-1 flex items-center justify-center h-full w-full">
         <div className="absolute inset-0">
           <ImageDithering
             width={window.innerWidth}
-            height={window.innerHeight}
+            height={viewportHeight ?? window.innerHeight}
             image="/img/G2r4MlMXIAAC3s2.jpeg"
             colorBack="#000000"
             colorFront="#2c2a26"
@@ -49,12 +66,12 @@ function RouteComponent() {
           />
         </div>
 
-        <section className="relative z-10 transition-all duration-700">
+        <section className="relative z-10 transition-all duration-700 mb-14">
           <Dithering
             width={960}
             height={540}
             colorBack="rgba(0,0,0,0)"
-            colorFront="#ff4800"
+            colorFront="000000"
             shape="sphere"
             type="4x4"
             size={2}

@@ -10,24 +10,12 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as X0RouteImport } from './routes/x0'
-import { Route as LoveRouteImport } from './routes/love'
-import { Route as CatRouteImport } from './routes/cat'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 
 const X0Route = X0RouteImport.update({
   id: '/x0',
   path: '/x0',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const LoveRoute = LoveRouteImport.update({
-  id: '/love',
-  path: '/love',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const CatRoute = CatRouteImport.update({
-  id: '/cat',
-  path: '/cat',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AboutRoute = AboutRouteImport.update({
@@ -44,38 +32,30 @@ const IndexRoute = IndexRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
-  '/cat': typeof CatRoute
-  '/love': typeof LoveRoute
   '/x0': typeof X0Route
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
-  '/cat': typeof CatRoute
-  '/love': typeof LoveRoute
   '/x0': typeof X0Route
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
-  '/cat': typeof CatRoute
-  '/love': typeof LoveRoute
   '/x0': typeof X0Route
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/about' | '/cat' | '/love' | '/x0'
+  fullPaths: '/' | '/about' | '/x0'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/about' | '/cat' | '/love' | '/x0'
-  id: '__root__' | '/' | '/about' | '/cat' | '/love' | '/x0'
+  to: '/' | '/about' | '/x0'
+  id: '__root__' | '/' | '/about' | '/x0'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
-  CatRoute: typeof CatRoute
-  LoveRoute: typeof LoveRoute
   X0Route: typeof X0Route
 }
 
@@ -86,20 +66,6 @@ declare module '@tanstack/react-router' {
       path: '/x0'
       fullPath: '/x0'
       preLoaderRoute: typeof X0RouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/love': {
-      id: '/love'
-      path: '/love'
-      fullPath: '/love'
-      preLoaderRoute: typeof LoveRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/cat': {
-      id: '/cat'
-      path: '/cat'
-      fullPath: '/cat'
-      preLoaderRoute: typeof CatRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/about': {
@@ -122,8 +88,6 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
-  CatRoute: CatRoute,
-  LoveRoute: LoveRoute,
   X0Route: X0Route,
 }
 export const routeTree = rootRouteImport

@@ -1,0 +1,164 @@
+{
+  "../../../../~start/default-client-entry.tsx": {
+    "file": "assets/main-CZT1w5fq.js",
+    "name": "main",
+    "src": "../../../../~start/default-client-entry.tsx",
+    "isEntry": true,
+    "dynamicImports": [
+      "src/routes/x0.tsx?tsr-split=component",
+      "src/routes/love.tsx?tsr-split=component",
+      "src/routes/custom-dithering.tsx?tsr-split=component",
+      "src/routes/cat.tsx?tsr-split=component",
+      "src/routes/about.tsx?tsr-split=component",
+      "src/routes/index.tsx?tsr-split=component"
+    ],
+    "css": [
+      "assets/main-Bii500c1.css"
+    ],
+    "assets": [
+      "assets/app-CqOH05J9.css",
+      "assets/instrument-serif-latin-ext-400-normal-CNbCjDc5.woff2",
+      "assets/instrument-serif-latin-ext-400-normal-ZduzdBhS.woff",
+      "assets/instrument-serif-latin-400-normal-CwvVGij3.woff2",
+      "assets/instrument-serif-latin-400-normal-BKYSN5O0.woff"
+    ]
+  },
+  "/home/guiaalves/Development/tanstackstart-alves/src/styles/app.css": {
+    "file": "assets/app-CqOH05J9.css",
+    "src": "/home/guiaalves/Development/tanstackstart-alves/src/styles/app.css"
+  },
+  "_CustomDitheringImage-q6uoVnrp.js": {
+    "file": "assets/CustomDitheringImage-q6uoVnrp.js",
+    "name": "CustomDitheringImage",
+    "imports": [
+      "../../../../~start/default-client-entry.tsx",
+      "_shader-mount-BjV1lhC-.js",
+      "_dithering-vvkEDeeQ.js"
+    ]
+  },
+  "_dithering-vvkEDeeQ.js": {
+    "file": "assets/dithering-vvkEDeeQ.js",
+    "name": "dithering",
+    "imports": [
+      "_shader-mount-BjV1lhC-.js"
+    ]
+  },
+  "_header-D2utcZlW.js": {
+    "file": "assets/header-D2utcZlW.js",
+    "name": "header",
+    "imports": [
+      "../../../../~start/default-client-entry.tsx"
+    ]
+  },
+  "_instrumentSerif-D_Wv8wdm.js": {
+    "file": "assets/instrumentSerif-D_Wv8wdm.js",
+    "name": "instrumentSerif",
+    "imports": [
+      "../../../../~start/default-client-entry.tsx"
+    ]
+  },
+  "_shader-mount-BjV1lhC-.js": {
+    "file": "assets/shader-mount-BjV1lhC-.js",
+    "name": "shader-mount",
+    "imports": [
+      "../../../../~start/default-client-entry.tsx"
+    ]
+  },
+  "node_modules/@fontsource/instrument-serif/files/instrument-serif-latin-400-normal.woff": {
+    "file": "assets/instrument-serif-latin-400-normal-BKYSN5O0.woff",
+    "src": "node_modules/@fontsource/instrument-serif/files/instrument-serif-latin-400-normal.woff"
+  },
+  "node_modules/@fontsource/instrument-serif/files/instrument-serif-latin-400-normal.woff2": {
+    "file": "assets/instrument-serif-latin-400-normal-CwvVGij3.woff2",
+    "src": "node_modules/@fontsource/instrument-serif/files/instrument-serif-latin-400-normal.woff2"
+  },
+  "node_modules/@fontsource/instrument-serif/files/instrument-serif-latin-ext-400-normal.woff": {
+    "file": "assets/instrument-serif-latin-ext-400-normal-ZduzdBhS.woff",
+    "src": "node_modules/@fontsource/instrument-serif/files/instrument-serif-latin-ext-400-normal.woff"
+  },
+  "node_modules/@fontsource/instrument-serif/files/instrument-serif-latin-ext-400-normal.woff2": {
+    "file": "assets/instrument-serif-latin-ext-400-normal-CNbCjDc5.woff2",
+    "src": "node_modules/@fontsource/instrument-serif/files/instrument-serif-latin-ext-400-normal.woff2"
+  },
+  "src/fonts/otf/PaperMono-Regular.otf": {
+    "file": "assets/PaperMono-Regular-CurgMVm8.otf",
+    "src": "src/fonts/otf/PaperMono-Regular.otf"
+  },
+  "src/fonts/ttf/PaperMono-Regular.ttf": {
+    "file": "assets/PaperMono-Regular-D-nh5bYP.ttf",
+    "src": "src/fonts/ttf/PaperMono-Regular.ttf"
+  },
+  "src/fonts/webfonts/PaperMono-Regular.woff2": {
+    "file": "assets/PaperMono-Regular-DCUKg8VM.woff2",
+    "src": "src/fonts/webfonts/PaperMono-Regular.woff2"
+  },
+  "src/routes/about.tsx?tsr-split=component": {
+    "file": "assets/about-DVQKeTSo.js",
+    "name": "about",
+    "src": "src/routes/about.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "../../../../~start/default-client-entry.tsx",
+      "_header-D2utcZlW.js",
+      "_shader-mount-BjV1lhC-.js",
+      "_dithering-vvkEDeeQ.js"
+    ]
+  },
+  "src/routes/cat.tsx?tsr-split=component": {
+    "file": "assets/cat-DUm6zlCh.js",
+    "name": "cat",
+    "src": "src/routes/cat.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "../../../../~start/default-client-entry.tsx"
+    ]
+  },
+  "src/routes/custom-dithering.tsx?tsr-split=component": {
+    "file": "assets/custom-dithering-D0eNP_JS.js",
+    "name": "custom-dithering",
+    "src": "src/routes/custom-dithering.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "../../../../~start/default-client-entry.tsx",
+      "_CustomDitheringImage-q6uoVnrp.js",
+      "_shader-mount-BjV1lhC-.js",
+      "_dithering-vvkEDeeQ.js"
+    ]
+  },
+  "src/routes/index.tsx?tsr-split=component": {
+    "file": "assets/index-DyMEltut.js",
+    "name": "index",
+    "src": "src/routes/index.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "../../../../~start/default-client-entry.tsx",
+      "_shader-mount-BjV1lhC-.js",
+      "_instrumentSerif-D_Wv8wdm.js",
+      "_header-D2utcZlW.js"
+    ]
+  },
+  "src/routes/love.tsx?tsr-split=component": {
+    "file": "assets/love-DQNpZfoU.js",
+    "name": "love",
+    "src": "src/routes/love.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "../../../../~start/default-client-entry.tsx",
+      "_instrumentSerif-D_Wv8wdm.js",
+      "_CustomDitheringImage-q6uoVnrp.js",
+      "_shader-mount-BjV1lhC-.js",
+      "_dithering-vvkEDeeQ.js"
+    ]
+  },
+  "src/routes/x0.tsx?tsr-split=component": {
+    "file": "assets/x0-DqKmZ60V.js",
+    "name": "x0",
+    "src": "src/routes/x0.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "../../../../~start/default-client-entry.tsx",
+      "_header-D2utcZlW.js",
+      "_instrumentSerif-D_Wv8wdm.js"
+    ]
+  }
+}
