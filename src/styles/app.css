@@ -2,8 +2,12 @@
 @import "tw-animate-css";
 @import "dither-plugin";
 
-@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:wght@400;700&display=swap");
-
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 @font-face {
   font-family: "Paper Mono";
   src:
@@ -15,12 +19,284 @@
   font-display: swap;
 }
 
+/* Geist Font Family - Thin */
+@font-face {
+  font-family: "Geist";
+  src:
+    url("/fonts/otf/Geist-Thin.otf") format("opentype"),
+    url("/fonts/ttf/Geist-Thin.ttf") format("truetype"),
+    url("/fonts/webfonts/Geist-Thin.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist";
+  src:
+    url("/fonts/otf/Geist-ThinItalic.otf") format("opentype"),
+    url("/fonts/ttf/Geist-ThinItalic.ttf") format("truetype"),
+    url("/fonts/webfonts/Geist-ThinItalic.woff2") format("woff2");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Geist Font Family - ExtraLight */
+@font-face {
+  font-family: "Geist";
+  src:
+    url("/fonts/otf/Geist-ExtraLight.otf") format("opentype"),
+    url("/fonts/ttf/Geist-ExtraLight.ttf") format("truetype"),
+    url("/fonts/webfonts/Geist-ExtraLight.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist";
+  src:
+    url("/fonts/otf/Geist-ExtraLightItalic.otf") format("opentype"),
+    url("/fonts/ttf/Geist-ExtraLightItalic.ttf") format("truetype"),
+    url("/fonts/webfonts/Geist-ExtraLightItalic.woff2") format("woff2");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Geist Font Family - Light */
+@font-face {
+  font-family: "Geist";
+  src:
+    url("/fonts/otf/Geist-Light.otf") format("opentype"),
+    url("/fonts/ttf/Geist-Light.ttf") format("truetype"),
+    url("/fonts/webfonts/Geist-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist";
+  src:
+    url("/fonts/otf/Geist-LightItalic.otf") format("opentype"),
+    url("/fonts/ttf/Geist-LightItalic.ttf") format("truetype"),
+    url("/fonts/webfonts/Geist-LightItalic.woff2") format("woff2");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Geist Font Family - Regular */
+@font-face {
+  font-family: "Geist";
+  src:
+    url("/fonts/otf/Geist-Regular.otf") format("opentype"),
+    url("/fonts/ttf/Geist-Regular.ttf") format("truetype"),
+    url("/fonts/webfonts/Geist-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist";
+  src:
+    url("/fonts/otf/Geist-RegularItalic.otf") format("opentype"),
+    url("/fonts/ttf/Geist-RegularItalic.ttf") format("truetype"),
+    url("/fonts/webfonts/Geist-RegularItalic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Geist Font Family - Medium */
+@font-face {
+  font-family: "Geist";
+  src:
+    url("/fonts/otf/Geist-Medium.otf") format("opentype"),
+    url("/fonts/ttf/Geist-Medium.ttf") format("truetype"),
+    url("/fonts/webfonts/Geist-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist";
+  src:
+    url("/fonts/otf/Geist-MediumItalic.otf") format("opentype"),
+    url("/fonts/ttf/Geist-MediumItalic.ttf") format("truetype"),
+    url("/fonts/webfonts/Geist-MediumItalic.woff2") format("woff2");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Geist Font Family - SemiBold */
+@font-face {
+  font-family: "Geist";
+  src:
+    url("/fonts/otf/Geist-SemiBold.otf") format("opentype"),
+    url("/fonts/ttf/Geist-SemiBold.ttf") format("truetype"),
+    url("/fonts/webfonts/Geist-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist";
+  src:
+    url("/fonts/otf/Geist-SemiBoldItalic.otf") format("opentype"),
+    url("/fonts/ttf/Geist-SemiBoldItalic.ttf") format("truetype"),
+    url("/fonts/webfonts/Geist-SemiBoldItalic.woff2") format("woff2");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Geist Font Family - Bold */
+@font-face {
+  font-family: "Geist";
+  src:
+    url("/fonts/otf/Geist-Bold.otf") format("opentype"),
+    url("/fonts/ttf/Geist-Bold.ttf") format("truetype"),
+    url("/fonts/webfonts/Geist-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist";
+  src:
+    url("/fonts/otf/Geist-BoldItalic.otf") format("opentype"),
+    url("/fonts/ttf/Geist-BoldItalic.ttf") format("truetype"),
+    url("/fonts/webfonts/Geist-BoldItalic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Geist Font Family - ExtraBold */
+@font-face {
+  font-family: "Geist";
+  src:
+    url("/fonts/otf/Geist-ExtraBold.otf") format("opentype"),
+    url("/fonts/ttf/Geist-ExtraBold.ttf") format("truetype"),
+    url("/fonts/webfonts/Geist-ExtraBold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist";
+  src:
+    url("/fonts/otf/Geist-ExtraBoldItalic.otf") format("opentype"),
+    url("/fonts/ttf/Geist-ExtraBoldItalic.ttf") format("truetype"),
+    url("/fonts/webfonts/Geist-ExtraBoldItalic.woff2") format("woff2");
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Geist Font Family - Black */
+@font-face {
+  font-family: "Geist";
+  src:
+    url("/fonts/otf/Geist-Black.otf") format("opentype"),
+    url("/fonts/ttf/Geist-Black.ttf") format("truetype"),
+    url("/fonts/webfonts/Geist-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist";
+  src:
+    url("/fonts/otf/Geist-BlackItalic.otf") format("opentype"),
+    url("/fonts/ttf/Geist-BlackItalic.ttf") format("truetype"),
+    url("/fonts/webfonts/Geist-BlackItalic.woff2") format("woff2");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Geist Variable Fonts */
+@font-face {
+  font-family: "Geist VF";
+  src:
+    url("/fonts/webfonts/Geist[wght].woff2") format("woff2-variations"),
+    url("/fonts/webfonts/Geist-Italic[wght].woff2") format("woff2-variations");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist VF";
+  src: url("/fonts/webfonts/Geist-Italic[wght].woff2")
+    format("woff2-variations");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Favorit";
+  src: url("/fonts/webfonts/Favorit Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Favorit";
+  src: url("/fonts/webfonts/Favorit Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Favorit";
+  src: url("/fonts/webfonts/Favorit Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+.font-favorit {
+  font-family: "Favorit", serif;
+}
+
 .font-instrument {
   font-family: "Instrument Serif", serif;
 }
 
 .font-paper-mono {
   font-family: "Paper Mono", serif;
+}
+
+.font-geist {
+  font-family:
+    "Geist",
+    system-ui,
+    -apple-system,
+    sans-serif;
+}
+
+.font-geist-vf {
+  font-family:
+    "Geist VF",
+    "Geist",
+    system-ui,
+    -apple-system,
+    sans-serif;
 }
 
 @custom-variant dark (&:is(.dark *));
@@ -33,7 +309,12 @@ body {
   overflow-y: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "Paper Mono", serif;
+  font-family:
+    "Geist",
+    "Favorit",
+    system-ui,
+    -apple-system,
+    sans-serif;
   position: fixed;
   width: 100%;
   height: 100%;

@@ -2,15 +2,7 @@
 
 import { createFileRoute } from "@tanstack/react-router";
 import { GradientBackground } from "@/components/GradientBackground";
-import { Instrument_Serif } from "@/fonts/instrumentSerif";
-import { Paper_Mono } from "@/fonts/instrumentSerif";
 import { Header } from "@/components/ui/header";
-
-const paperMonoSerif = Paper_Mono({
-  subsets: ["latin"],
-  weight: ["400"],
-  display: "swap",
-});
 
 export const Route = createFileRoute("/")({
   component: HomeComponent,
@@ -23,11 +15,11 @@ function HomeComponent() {
       <main className="relative flex-1 flex items-center justify-center overflow-hidden min-h-screen">
         <GradientBackground />
         <section className="px-6 relative z-10">
-          <h1
-            className={`text-white text-2xl ${paperMonoSerif.className} animate-fadeIn`}
-          >
+          <h1 className="text-white text-[18px] leading-[24px] tracking-[-0.05em] text-center font-geist font-bold animate-fadeIn">
             imagination is limit
           </h1>
+
+          <h1 className="spacing"></h1>
         </section>
       </main>
     </div>

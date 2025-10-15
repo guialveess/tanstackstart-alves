@@ -71,10 +71,11 @@ function RouteComponent() {
             width={960}
             height={540}
             colorBack="rgba(0,0,0,0)"
-            colorFront="000000"
+            colorFront="#000000"
             shape="sphere"
             type="4x4"
             size={2}
+            className="mb-12"
             speed={1}
             scale={0.6}
           />
