@@ -76,8 +76,8 @@ function RouteComponent() {
             type="4x4"
             size={2}
             className="mb-12"
-            speed={1}
-            scale={0.6}
+            speed={2}
+            scale={0.7}
           />
 
           {isFirefox && (
